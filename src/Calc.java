@@ -30,10 +30,10 @@ public class Calc {
             if (n2 != 0) {
                 System.out.print("\nBolme Isleminin Sonucu : " + (n1 / n2));
             } else {
-                System.out.println("\nBir sayi sifira bolunmez. Lutfen Tekrar Deneyiniz !");
+                System.out.println("\nBir Sayi Sifira Bolunmez. Lutfen Tekrar Deneyiniz !");
             }
         } else {
-            System.out.print("\nLutfen 1 ila 4 arasinda bir sayi seciniz ! ");
+            System.out.print("\nLutfen 1 ila 4 Arasinda Bir Sayi Seciniz ! ");
         }
     }
 }
