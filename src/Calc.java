@@ -9,6 +9,8 @@ public class Calc {
         int n1, n2;
         double select;
 
+        // İlk olarak kullanıcıdan girişleri alıyoruz ve formüllere göre çıkan sonucu ekrana yazdırıyoruz.
+
         System.out.println();
         System.out.print("Ilk Sayiyi Giriniz : ");
         n1 = input.nextInt();
