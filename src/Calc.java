@@ -1,35 +1,37 @@
+// Javada if else ile basit hesap makinesi yapınız.
+
 import java.util.Scanner;
 
 public class Calc {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int s1, s2;
-        double secim;
+        int n1, n2;
+        double select;
 
+        System.out.println();
         System.out.print("Ilk Sayiyi Giriniz : ");
-        s1 = input.nextInt();
+        n1 = input.nextInt();
         System.out.print("Ikinci Sayiyi Giriniz : ");
-        s2 = input.nextInt();
-        System.out.println("1-Toplama \n2-Cikarma \n3-Carpma \n4-Bolme");
-        System.out.print("Seciminizi Yapiniz : ");
-        secim = input.nextDouble();
+        n2 = input.nextInt();
+        System.out.println("\n1-Toplama \n2-Cikarma \n3-Carpma \n4-Bolme");
+        System.out.print("\nSeciminizi Yapiniz : ");
+        select = input.nextDouble();
 
-
-        if (secim == 1) {
-            System.out.print("Toplama Isleminin Sonucu : " + (s1 + s2));
-        } else if (secim == 2) {
-            System.out.print("Cikarma Isleminin Sonucu : " + (s1 - s2));
-        } else if (secim == 3) {
-            System.out.print("Carpma Isleminin Sonucu : " + (s1 * s2));
-        } else if (secim == 4) {
-            if (s2 != 0) {
-                System.out.print("Bolme Isleminin Sonucu : " + (s1 / s2));
+        if (select == 1) {
+            System.out.print("\nToplama Isleminin Sonucu : " + (n1 + n2));
+        } else if (select == 2) {
+            System.out.print("\nCikarma Isleminin Sonucu : " + (n1 - n2));
+        } else if (select == 3) {
+            System.out.print("\nCarpma Isleminin Sonucu : " + (n1 * n2));
+        } else if (select == 4) {
+            if (n2 != 0) {
+                System.out.print("\nBolme Isleminin Sonucu : " + (n1 / n2));
             } else {
-                System.out.println("Bir sayi sifira bolunmez.");
+                System.out.println("\nBir sayi sifira bolunmez. Lutfen Tekrar Deneyiniz !");
             }
         } else {
-            System.out.print("Lutfen 1 ila 4 arasinda bir sayi seciniz ! ");
+            System.out.print("\nLutfen 1 ila 4 arasinda bir sayi seciniz ! ");
         }
     }
 }
